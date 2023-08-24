@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-j4ippt+3h39u4ontllpc8a(4h&^god(7aicz#@q^sl_(w)2otp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
@@ -82,10 +82,15 @@ WSGI_APPLICATION = 'puddle.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'puddle',
+        'USER': 'shamith',
+        'PASSWORD': 'shamith10221',
+        'HOST': 'database-1.cf9dt6lrnclf.eu-north-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
