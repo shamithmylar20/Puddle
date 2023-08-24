@@ -80,17 +80,24 @@ WSGI_APPLICATION = 'puddle.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'puddle',
-        'USER': 'shamith',
-        'PASSWORD': 'shamith10221',
-        'HOST': 'database-1.cf9dt6lrnclf.eu-north-1.rds.amazonaws.com',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'puddle',
+#         'USER': 'shamith',
+#         'PASSWORD': 'shamith10221',
+#         'HOST': 'database-2.cf9dt6lrnclf.eu-north-1.rds.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
+import dj_database_url
+import os
+
+# DATABASE_URL = 'postgres://shamith:shamith10221@database-2.cf9dt6lrnclf.eu-north-1.rds.amazonaws.com:5432/puddle'
+
+
+DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
 
 
 # Password validation
