@@ -19,14 +19,19 @@ Installation:
 
 Clone the repository:
 git clone https://github.com/shamithmylar20/puddle.git
+
 Install the dependencies:
 pip install -r requirements.txt
+
 Create a database and migrate the models:
 python manage.py migrate
+
 Create a superuser account:
 python manage.py createsuperuser
+
 Start the development server:
 python manage.py runserver
+
 Usage:
 
 Go to the website in your web browser: http://localhost:8000
@@ -34,6 +39,7 @@ Login or sign up for an account
 List your products
 Update the details of your products
 Delete your products
+
 Deployment:
 
 To deploy Puddle to a production environment, you can use a variety of services, such as Heroku, AWS Elastic Beanstalk, or Google App Engine.
