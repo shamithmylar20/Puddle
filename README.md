@@ -3,6 +3,13 @@ Project Name: Puddle
 
 Project Description: Puddle is an e-commerce website built using Django and PostgreSQL as backend and HTML and CSS as frontend. It allows users to login and sign up, list products, update the details of the products, and delete them.
 
+![Home Page](https://github.com/user-attachments/assets/60b24e4e-5aac-48a1-8691-82ae66f554ff)
+
+![Product Details](https://github.com/user-attachments/assets/92a4f8ea-ffb2-4ba7-a800-4897e56fef69)
+
+![Admin Page](https://github.com/user-attachments/assets/98e66ac9-eeaa-441b-8e84-d14367ded7db)
+
+
 Features:
 
 User login and signup
